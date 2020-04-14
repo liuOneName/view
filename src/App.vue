@@ -1,7 +1,7 @@
 <!--
  * @Author: liuchuan
  * @Date: 2020-04-14 13:13:22
- * @LastEditTime: 2020-04-14 13:53:10
+ * @LastEditTime: 2020-04-14 14:26:11
  * @Description: 
  -->
 <template>
@@ -133,5 +133,10 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
 </style>

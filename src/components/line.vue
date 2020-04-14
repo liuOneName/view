@@ -1,7 +1,7 @@
 <!--
  * @Author: liuchuan
  * @Date: 2020-04-14 13:23:25
- * @LastEditTime: 2020-04-14 14:10:21
+ * @LastEditTime: 2020-04-14 14:29:38
  * @Description: 
  -->
 
@@ -36,7 +36,8 @@ export default {
 .line {
   display: flex;
   align-items: flex-start;
-  flex: 1;
+  /* flex: 1; */
+  min-width: 390px;
   &-center {
     width: 100px;
     text-align: center;

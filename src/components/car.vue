@@ -1,7 +1,7 @@
 <!--
  * @Author: liuchuan
  * @Date: 2020-04-14 13:16:00
- * @LastEditTime: 2020-04-14 14:19:33
+ * @LastEditTime: 2020-04-14 14:28:49
  * @Description: 
  -->
 
@@ -17,12 +17,12 @@
       />
       <div>{{ d.car.carHeight }}米 {{ d.car.loadingType.desc }}</div>
     </div>
-    <div class="center">
-      <line-info :d="lineData"></line-info>
-      <div style="margin: 0 0px 0 60px">
-        <price :d="{ price: d.price, count: d.usageCount }"></price>
-      </div>
-    </div>
+    <!-- <div class="center"> -->
+    <line-info :d="lineData"></line-info>
+    <!-- <div style="margin: 0 0px 0 60px"> -->
+    <price :d="{ price: d.price, count: d.usageCount }"></price>
+    <!-- </div>
+    </div> -->
     <button class="right">立即用车</button>
   </div>
 </template>
@@ -62,7 +62,10 @@ export default {
 .car {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: space-between;
+  padding: 10px 35px 10px 20px;
+  border: 1px solid #999;
+  border-radius: 20px;
   .left {
     width: 100px;
     img {
@@ -73,11 +76,11 @@ export default {
       border-radius: 10px;
     }
   }
-  .center {
+  /* .center {
     flex: 1;
     margin: 0 60px;
     display: flex;
-  }
+  } */
   .right {
     width: 100px;
     font-size: 18px;
